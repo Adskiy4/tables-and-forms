@@ -9,7 +9,53 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form method="post" action="/pets/orders">
+        <label>
+            Тип животного
+            <select name="petType">
+                <option>cat</option>
+                <option>dog</option>
+                <option>tiger</option>
+            </select>
+        </label>
+        <label>
+            Пол
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="boy" required> Male</label>
+                <label><input type="radio" name="gender" value="girl"> Female</label>
+            </div>
+        </label>
+        <label>
+            Цвет глаз
+            <input type="color" name="eyeColor" required>
+        </label>
+        <label>
+            Длина хвоста
+            <input type="number" max="120" min="7" name="tailLength" required>
+        </label>
+        <label>
+            Имя
+            <input placeholder="BOB" name="name" minlength="3" maxlength="50" required>
+        </label>
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth" required>
+        </label>
+        <label>
+            Email
+            <input type="email" placeholder="z@urfu.ru" name="email" required>
+        </label>
+        <label>
+            Номер телефона
+            <input type="tel" placeholder="8-800-355-35-35" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone" required>
+        </label>
+        <label>
+            Правила
+            <input type="checkbox" name="rules" value="true" required>
+        </label>
+        <button type="submit" class="send" value="отправить"></button>Отправить
+        <button type="reset" class="drop" value="сбросить" formnovalidate></button>
+    </form>
 
 </main>
 </body>

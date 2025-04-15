@@ -13,6 +13,7 @@ main {
     border-radius: 20px;
 }
 
+
 h1 {
     font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -28,4 +29,54 @@ h1 {
 
 .orders {
     margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, select, textarea, button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.send {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send:hover {
+    background-color: #45a049;
+}
+.drop {
+    background-color: #ce2424;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.drop:hover {
+    background-color: #a04545;
 }
